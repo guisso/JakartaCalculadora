@@ -1,0 +1,52 @@
+<html>
+  
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      label, input {
+        margin: .5em;
+      }
+      input {
+        padding: .25em;
+      }
+      input[type="submit"] {
+        padding: .25em 1em;
+      }
+    </style>
+  <body>
+    <header>
+      <h2>Desenvolvimento <i>Web</i> - BCC 2022.1</h2>
+    </header>
+
+    <main>
+      <h1>Calculadora</h1>
+      <!-- Formulário com ação sobre os dados executada pelo servlet -->
+      <form action="CalculadoraServlet" method="get">
+        <!-- Rótulo para entrada "a" -->
+        <label>A:</label>
+        <!-- Campo de entrada para "a" -->
+        <input name="a"><br>
+
+        <!-- Rótulo para entrada "b" -->
+        <label>B:</label>
+        <!-- Campo de entrada para "b" -->
+        <input name="b"><br>
+
+        <!-- Gera-se um input do tipo button no NetBeans por
+        meio de in:button + TAB --> 
+        <input type="submit" name="op" value="+">
+        <input type="submit" name="op" value="-">
+        <input type="submit" name="op" value="*">
+        <input type="submit" name="op" value="/">
+      </form>
+      
+      <a href="index.html">Voltar</a>
+    </main>
+
+    <footer>
+      <p>&copy; 2022 - Luis Guisso</p>
+    </footer>
+  </body>
+
+</html>
